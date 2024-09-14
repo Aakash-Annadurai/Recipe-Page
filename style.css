@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    position: relative;
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color:hsl(24, 5%, 18%);
+}
+h2{
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+}
+p, h3, ul, ol, td{
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", system-ui;
+    font-weight:normal;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.Card{
+    background-color: white;
+    max-width: 55em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+.recipe-container{
+    padding: 40px;
+}
+img{
+    padding: 40px;
+    display: block;
+    max-width: 100%;
+    border-radius: 50px;
+}
+h1{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+p{
+    padding-top:10px ;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.recipe-prep{
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+h3{
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+ul, ol{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    line-height: 2;
+}
+tr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: solid 2px hsl(30, 18%, 87%);
+}
+td{
+    padding: 10px 20px 10px 30px;
+}
+.recipe-ins{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: solid hsl(30, 18%, 87%);
+    border-bottom: solid hsl(30, 18%, 87%);
+}
+
+.recipe-nutri{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.cal{
+    color: hsl(14, 45%, 36%);
+}
+
+/* Media Query */
+
+@media (max-width: 500px){
+.Card{
+    margin: 0;
+}
+.attribution{
+    background-color: white;
+}
+img{
+    padding: 0;
+    border-radius: 0;
+}
+}
